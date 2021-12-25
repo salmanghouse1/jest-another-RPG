@@ -1,5 +1,8 @@
-const Potion = require('../lib/Potion.js')
+const Potion = require('../lib/Potion.js');
+jest.mock('../lib/Potion');
 
+
+console.log(new Potion())
 
 test('Tests Potion', () => {
     const potion = new Potion('health');
